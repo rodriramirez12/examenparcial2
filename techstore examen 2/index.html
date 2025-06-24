@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore</title>
+  <link href="css/framework7.bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="view view-main view-init">
+
+      <!-- MENU PANEL IZQUIERDO -->
+      <section class="panel panel-left panel-cover">
+        <div id="panel-user">
+          <div class="row">
+            <article class="col-30">
+              <img src="img/laptop 4.jpg" alt="" class="img-fluid">
+            </article>
+            <article class="col-70">
+              <h4>Rodrigo Ramírez</h4>
+              <p class="text-small">techstore@app.com</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="list media-list">
+            <ul>
+              <li><a href="/home/" class="item-link item-content panel-close">
+                <div class="item-media"><i class="material-icons">home</i></div>
+                <div class="item-inner"><div class="item-title">Inicio</div></div>
+              </a></li>
+              <li><a href="/categorias/" class="item-link item-content panel-close">
+                <div class="item-media"><i class="material-icons">laptop</i></div>
+                <div class="item-inner"><div class="item-title">Categorías</div></div>
+              </a></li>
+              <li><a href="#" class="item-link item-content panel-close">
+                <div class="item-media"><i class="material-icons">star</i></div>
+                <div class="item-inner"><div class="item-title">Favoritos</div></div>
+              </a></li>
+              <li><a href="#" class="item-link item-content panel-close">
+                <div class="item-media"><i class="material-icons">store</i></div>
+                <div class="item-inner"><div class="item-title">Locales</div></div>
+              </a></li>
+              <li><a href="/perfil/" class="item-link item-content panel-close">
+                <div class="item-media"><i class="material-icons">person</i></div>
+                <div class="item-inner"><div class="item-title">Perfil</div></div>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PÁGINA PRINCIPAL -->
+      <section class="page" data-name="home">
+        <nav class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">TechStore</div>
+            <div class="right">
+              <a href="#" class="link panel-open" data-panel="left"><i class="material-icons">menu</i></a>
+            </div>
+          </div>
+        </nav>
+
+        <section class="page-content">
+
+          <!-- PROMOCIÓN -->
+          <div class="block bg-theme-color">
+            <div class="row">
+              <article class="col">
+                <h3 class="texto-mediano">¡Rebajas de verano!</h3>
+                <p>Hasta 40% de descuento en laptops seleccionadas</p>
+                <a href="#" class="button button-fill button-white">Ver ofertas</a>
+              </article>
+              <article class="col">
+                <!-- imagen promoción -->
+                <img src="img/laptop 1.jpg" alt="" class="img-fluid">
+              </article>
+            </div>
+          </div>
+
+          <!-- CATEGORÍAS -->
+          <div class="row row-title">
+            <article class="col-70">
+              <h2 class="block-title">Categorías</h2>
+            </article>
+            <article class="col-30">
+              <a href="/categorias/" class="link">Ver todo</a>
+            </article>
+          </div>
+
+          <div class="block">
+            <div class="row">
+              <div class="col-50">
+                <article class="card">
+                  <a href="/categorias/">
+                    <div class="card-content card-content-padding text-align-center">
+                      <img src="img/laptop 3.jpg" alt="" class="img-fluid">
+                      <p>Laptops</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="col-50">
+                <article class="card">
+                  <a href="/categorias/">
+                    <div class="card-content card-content-padding text-align-center">
+                      <img src="img/laptop 10.jpg" alt="" class="img-fluid">
+                      <p>Monitores</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="col-50">
+                <article class="card">
+                  <a href="/categorias/">
+                    <div class="card-content card-content-padding text-align-center">
+                      <img src="img/laptop 11.jpg" alt="" class="img-fluid">
+                      <p>Accesorios</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="col-50">
+                <article class="card">
+                  <a href="/categorias/">
+                    <div class="card-content card-content-padding text-align-center">
+                      <img src="img/laptop 9.jpg" alt="" class="img-fluid">
+                      <p>Gaming</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTOS DESTACADOS -->
+          <div class="row row-title">
+            <article class="col-70">
+              <h2 class="block-title">Destacados</h2>
+            </article>
+            <article class="col-30">
+              <a href="#" class="link">Ver más</a>
+            </article>
+          </div>
+
+          <div class="swiper-container swiper-init" data-speed="400" data-space-between="10" data-slides-per-view="2.3">
+            <div class="swiper-wrapper">
+              <!-- producto 1 -->
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card-content">
+                    <img src="img/laptop1.jpg" alt="" class="img-fluid">
+                    <h3 class="text-align-center">Lenovo IdeaPad 5</h3>
+                    <p class="text-align-center">L. 22,000</p>
+                  </div>
+                </article>
+              </div>
+              <!-- producto 2 -->
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card-content">
+                    <img src="img/laptop2.jpg" alt="" class="img-fluid">
+                    <h3 class="text-align-center">HP Pavilion x360</h3>
+                    <p class="text-align-center">L. 25,500</p>
+                  </div>
+                </article>
+              </div>
+              <!-- producto 3 -->
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card-content">
+                    <img src="img/gamer1.jpg" alt="" class="img-fluid">
+                    <h3 class="text-align-center">ASUS TUF Gaming</h3>
+                    <p class="text-align-center">L. 30,000</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </section>
+
+      <!-- FOOTER -->
+      <nav class="toolbar toolbar-bottom tabbar-labels">
+        <div class="toolbar-inner">
+          <a href="/home/" class="tab-link">
+            <i class="material-icons">home</i>
+            <span class="tabbar-label">Inicio</span>
+          </a>
+          <a href="#" class="tab-link">
+            <i class="material-icons">favorite</i>
+            <span class="tabbar-label">Favoritos</span>
+          </a>
+          <a href="#" class="tab-link">
+            <i class="material-icons">shopping_cart</i>
+            <span class="tabbar-label">Carrito</span>
+          </a>
+          <a href="/perfil/" class="tab-link">
+            <i class="material-icons">person</i>
+            <span class="tabbar-label">Perfil</span>
+          </a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <!-- Framework7 JS -->
+  <script src="js/framework7.bundle.min.js"></script>
+  <script>
+    var app = new Framework7({
+      root: '#app',
+      routes: [
+        {
+          path: '/home/',
+          url: 'index.html',
+        },
+        {
+          path: '/categorias/',
+          url: 'categorias.html',
+        },
+        {
+          path: '/perfil/',
+          url: 'perfil.html',
+        }
+      ]
+    });
+  </script>
+
+</body>
+</html>
